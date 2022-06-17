@@ -1,0 +1,24 @@
+<div class="container pt-2">
+  <h1>Orders</h1>
+  <div *ngIf="isLoading" class="loading-screen">
+    <mat-spinner></mat-spinner>
+    <p>Loading orders...</p>
+  </div>
+  <ng-container *ngIf="getUndoneOrders().length > 0">
+    <p>Pick a order to fulfill, or press the "Next Order" Button on the HS-50</p>
+    <div *ngFor="let order of getUndoneOrders()" class="card mb-2" (click)="displayOrder(order)">
+        <div class="card-body">
+          <h2 class="card-title">{{order.id}}</h2>
+          <div class="card-text">
+            <ul>
+              <li *ngFor="let item of order.items">{{item.name}}</li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </ng-container>
+  <ng-container *ngIf="!isLoading && getUndoneOrders().length === 0">
+    <p>No orders left. All done.</p>
+  </ng-container>
+</div>
+  
