@@ -6390,8 +6390,10 @@ nice-try@^1.0.4:
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
   integrity sha512-1nh45deeb5olNY7eX82BkPO7SSxR5SSYJiPTrTdFUVYwAl8CKMA5N9PjTYkHiRjisVcxcQ1HXdLhx2qxxJzLNQ==
 
-"nimmsta-web-library@file:../nwl/dist":
-  version "6.0.0"
+nimmsta-web-library@^6.0.601:
+  version "6.0.601"
+  resolved "https://registry.yarnpkg.com/nimmsta-web-library/-/nimmsta-web-library-6.0.601.tgz#5d30f480a339ce101b44e8bdf0b60979e785f2d4"
+  integrity sha512-BcjZSi4YUnyuMIj2qGMRHZT/baAw2GSvsAF5D8StX0trOHzb0yfde13UOYsA231m0T1uS9yTm6j6+E5nCtogPg==
   dependencies:
     "@types/node-fetch" "^2.5.7"
     sub-events "^1.8.6"

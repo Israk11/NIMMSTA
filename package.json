@@ -24,7 +24,7 @@
     "@angular/router": "~13.3.0",
     "@popperjs/core": "^2.10.2",
     "bootstrap": "^5.1.3",
-    "nimmsta-web-library": "file:../nwl/dist",
+    "nimmsta-web-library": "^6.0.601",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
