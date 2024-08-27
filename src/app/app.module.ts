@@ -10,6 +10,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { OrderListComponent } from './order-list/order-list.component';
 import { RouterModule, Routes } from '@angular/router';
 import { OrderDetailComponent } from './order-detail/order-detail.component';
+import { CapitalizePipe } from './capitalize.pipe';
 
 const routes: Routes = [  
   { path: 'orders', component: OrderListComponent },
@@ -19,7 +20,8 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    OrderListComponent
+    OrderListComponent,
+    CapitalizePipe
   ],
   imports: [
     BrowserModule,
